@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2014 Daniel Eden
+*/
+html, body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+#container {
+	background: url(drevo.gif) no-repeat left center;
+	}
+#okvir {
+	height: 470px;
+	padding:0 0 0 250px;
+	overflow:hidden;
+	}
+#dodaj {
+	text-align:right;
+	width:100%;
+	padding:0px 20px 0 20px;
+	}
+h1, h2 {
+	font-family: 'Allura', cursive;
+	color:#F00;
+	text-shadow: -1px 1px 3px  rgba(51,51,51, 0.55);
+	filter: dropshadow(color=#333333, offx=-1, offy=1);
+	font-size:80px;
+	line-height:80px;
+	text-align:center;
+	}
+h2 {
+	font-size:45px;
+	line-height: 45px;
+	color:#333;
+	margin-top: 20px;
+	}
+hr {
+	width: 50px;
+	border:solid 1px #999999;
+	
+	}
+.baza {
+    display:none
+}
+@media only screen and (min-width: 768px){}
+@media (min-width: 992px){}
+@media (min-width: 1200px){}
+@media screen and (orientation:portrait){
+	#okvir {
+		padding:0 0 0 0;
+	}
+	#container {
+		background: url(blank.gif) no-repeat left center;
+	}
+}
+@media (max-width: 767px){}
+@media (min-width: 992px) and (max-width: 1199px){}
+@media (min-width: 768px) and (max-width: 991px){}
+.rotate-arena {
+    display: inline-block;
+}
+
+.rotate-arena > span {
+    display: inline-block; 
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+}
+
+
+
+
+@-webkit-keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+}
+
+.fadeOutDown {
+  -webkit-animation-name: fadeOutDown;
+          animation-name: fadeOutDown;
+}
